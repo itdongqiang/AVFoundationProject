@@ -11,7 +11,7 @@
 // 视频尺寸
 #define TTAVVideoSize (CGSizeMake(1080, 1920))
 #pragma mark - 合成视频
-+ (void)compositeVideoWithAssetArray:(NSArray <AVAsset *>*)assetArray transitionAnimation:(TransitionAnimationType)transitionAnimationType bgAudioAsset:(nullable AVAsset *)bgAudioAsset complete:(CompositeVideoCompleteBlock)complete;{
++ (void)compositeVideoWithAssetArray:(NSArray <AVAsset *>*)assetArray transitionAnimation:(TransitionAnimationType)transitionAnimationType bgAudioAsset:(nullable AVAsset *)bgAudioAsset filter:(BOOL)addFilter complete:(CompositeVideoCompleteBlock)complete{
     AVMutableComposition *composition = [AVMutableComposition composition];
     NSError *error;
     NSMutableArray<AVMutableCompositionTrack*>* videoCompositionTracks = [NSMutableArray array];
@@ -21,6 +21,11 @@
 
     CMTime startTime = kCMTimeZero;
     CMTime duration = kCMTimeZero;
+    
+    // 滤镜暂时只处理第一个视频
+    if (addFilter) {
+        assetArray = @[assetArray.firstObject];
+    }
     
     CMTime transTime = kCMTimeZero;
     if (transitionAnimationType != TransitionAnimationNone) {
@@ -68,13 +73,61 @@
     }
     audioMix.inputParameters = audioMixArray;
     
-    //获取分辨率
-    CGSize renderSize = TTAVVideoSize;
+    AVMutableVideoComposition *videoComposition = [AVMutableVideoComposition videoComposition];
+    if (addFilter) {
+        AVAsset *asset = assetArray.firstObject;
+        CGAffineTransform rotation = [self changeVideoSizeWithAsset:asset passThroughLayer:nil];
+
+        videoComposition = [AVMutableVideoComposition videoCompositionWithAsset:asset applyingCIFiltersWithHandler:^(AVAsynchronousCIImageFilteringRequest * _Nonnull request) {
+            CIImage *sourceImage = request.sourceImage;
+            
+            // 修正frame
+            CIFilter *transformFilter = [CIFilter filterWithName:@"CIAffineTransform"];
+            [transformFilter setValue:sourceImage forKey: kCIInputImageKey];
+            [transformFilter setValue: [NSValue valueWithCGAffineTransform: rotation] forKey: kCIInputTransformKey];
+            sourceImage = transformFilter.outputImage;
+            CGRect extent = sourceImage.extent;
+            CGAffineTransform translation = CGAffineTransformMakeTranslation(-extent.origin.x, -extent.origin.y);
+            [transformFilter setValue:sourceImage forKey: kCIInputImageKey];
+            [transformFilter setValue: [NSValue valueWithCGAffineTransform: translation] forKey: kCIInputTransformKey];
+            sourceImage = transformFilter.outputImage;
+
+            // 应用滤镜
+            extent = sourceImage.extent;
+            sourceImage = [sourceImage imageByClampingToExtent];
+            CIFilter *filter = [CIFilter filterWithName:@"CIComicEffect"];
+            [filter setValue:sourceImage forKey:kCIInputImageKey];
+            sourceImage = filter.outputImage;
+            sourceImage = [sourceImage imageByCroppingToRect:extent];
+            
+            // 修正方向问题
+            CGFloat newHeight = 1920;
+            CGFloat inset = (extent.size.height - newHeight) / 2;
+            extent = CGRectInset(extent, 0, inset);
+            sourceImage = [sourceImage imageByCroppingToRect:extent];
+
+            CGFloat scale = 1920 / newHeight;
+            CGAffineTransform scaleTransform = CGAffineTransformMakeScale(scale, scale);
+            [transformFilter setValue:sourceImage forKey: kCIInputImageKey];
+            [transformFilter setValue: [NSValue valueWithCGAffineTransform: scaleTransform] forKey: kCIInputTransformKey];
+            sourceImage = transformFilter.outputImage;
+
+            translation = CGAffineTransformMakeTranslation(0, -inset * scale);
+            [transformFilter setValue:sourceImage forKey: kCIInputImageKey];
+            [transformFilter setValue: [NSValue valueWithCGAffineTransform: translation] forKey: kCIInputTransformKey];
+            sourceImage = transformFilter.outputImage;
+
+            [request finishWithImage:sourceImage context:nil];
+        }];
+        
+    } else{
+        videoComposition = [AVMutableVideoComposition videoCompositionWithPropertiesOfAsset:composition];
+        videoComposition.instructions = @[[self createCompositionInstructionsWithCompositionVideoTracks:videoCompositionTracks assetTracks:videoTracks assets:assetArray totalDuration:duration transAnimationType:transitionAnimationType transTime:transTime]];
+    }
     //设置分辨率
-    AVMutableVideoComposition *videoComposition = [AVMutableVideoComposition videoCompositionWithPropertiesOfAsset:composition];
+    CGSize renderSize = TTAVVideoSize;
     videoComposition.renderSize = renderSize;
     videoComposition.frameDuration = videoCompositionTracks[0].minFrameDuration;
-    videoComposition.instructions = @[[self createCompositionInstructionsWithCompositionVideoTracks:videoCompositionTracks assetTracks:videoTracks assets:assetArray totalDuration:duration transAnimationType:transitionAnimationType transTime:transTime]];
     if (complete) {
         complete(composition, videoComposition, audioMix, error);
     }
@@ -135,10 +188,10 @@
 }
 
 // 调整视频角度尺寸
-+ (void)changeVideoSizeWithAsset:(AVAsset *)asset passThroughLayer:(AVMutableVideoCompositionLayerInstruction *)passThroughLayer {
++ (CGAffineTransform)changeVideoSizeWithAsset:(AVAsset *)asset passThroughLayer:(AVMutableVideoCompositionLayerInstruction *)passThroughLayer {
     AVAssetTrack *videoAssetTrack = [asset tracksWithMediaType:AVMediaTypeVideo].firstObject;
     if (videoAssetTrack == nil) {
-        return;
+        return CGAffineTransformIdentity;
     }
     CGSize naturalSize = videoAssetTrack.naturalSize;
     if ([TTAVVideoCompositionTool videoDegressWithVideoAsset:asset] == 90) {
@@ -154,11 +207,13 @@
         CGAffineTransform scaleTransform = CGAffineTransformScale(translateToCenter, videoSize.width/naturalSize.width, height/naturalSize.height);
         CGAffineTransform mixedTransform = CGAffineTransformRotate(scaleTransform, M_PI_2);
         [passThroughLayer setTransform:mixedTransform atTime:kCMTimeZero];
+        return  scaleTransform;
     } else {
         CGFloat height = videoSize.width * naturalSize.height / naturalSize.width;
         CGAffineTransform translateToCenter = CGAffineTransformMakeTranslation(0, videoSize.height/2.0 - height/2.0);
         CGAffineTransform scaleTransform = CGAffineTransformScale(translateToCenter, videoSize.width/naturalSize.width, height/naturalSize.height);
         [passThroughLayer setTransform:scaleTransform atTime:kCMTimeZero];
+        return  scaleTransform;
     }
 }
 

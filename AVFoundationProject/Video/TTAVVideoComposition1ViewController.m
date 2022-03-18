@@ -74,7 +74,7 @@
         bgm = [AVAsset assetWithURL: [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"bgm" ofType:@"mp3"] ]];
     }
     
-    [TTAVVideoCompositionTool compositeVideoWithAssetArray:self.assets transitionAnimation:self.transAnimationSegment.selectedSegmentIndex bgAudioAsset:bgm complete:^(AVMutableComposition * _Nonnull composition, AVVideoComposition * _Nonnull videoComposition, AVMutableAudioMix * _Nonnull audioMix, NSError * _Nonnull error) {
+    [TTAVVideoCompositionTool compositeVideoWithAssetArray:self.assets transitionAnimation:self.transAnimationSegment.selectedSegmentIndex bgAudioAsset:bgm filter:self.HDRSwitch.on complete:^(AVMutableComposition * _Nonnull composition, AVVideoComposition * _Nonnull videoComposition, AVMutableAudioMix * _Nonnull audioMix, NSError * _Nonnull error) {
         self.title = @"已合成";
         weakSelf.composition = composition;
         weakSelf.videoComposition = videoComposition;

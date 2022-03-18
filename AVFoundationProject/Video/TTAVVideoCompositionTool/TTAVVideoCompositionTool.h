@@ -21,7 +21,7 @@ typedef enum : NSUInteger {
 typedef void (^CompositeVideoCompleteBlock)(AVMutableComposition *composition, AVMutableVideoComposition *videoComoposition, AVMutableAudioMix *audioMix, NSError *error);
 
 @interface TTAVVideoCompositionTool : NSObject
-+ (void)compositeVideoWithAssetArray:(NSArray <AVAsset *>*)assetArray transitionAnimation:(TransitionAnimationType)transitionAnimation bgAudioAsset:(nullable AVAsset *)bgAudioAsset complete:(CompositeVideoCompleteBlock)complete;
++ (void)compositeVideoWithAssetArray:(NSArray <AVAsset *>*)assetArray transitionAnimation:(TransitionAnimationType)transitionAnimationType bgAudioAsset:(nullable AVAsset *)bgAudioAsset filter:(BOOL)addFilter complete:(CompositeVideoCompleteBlock)complete;
 
 + (void)compositeImageWithImageArray:(NSArray <UIImage *>*)imageArray stayTime:(CGFloat)stayTime transitionAnimation:(TransitionAnimationType)transitionAnimation bgAudioAsset:(nullable AVAsset *)bgAudioAsset complete:(CompositeVideoCompleteBlock)complete;
 

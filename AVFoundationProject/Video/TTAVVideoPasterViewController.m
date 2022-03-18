@@ -88,10 +88,6 @@
     if (!self.asset) {
         return;
     }
-    AVAssetWriter *hh = [[AVAssetWriter alloc] initWithURL:nil fileType:nil error:nil];
-    AVAssetReaderAudioMixOutput
-    
-    AVAssetReaderVideoCompositionOutput *h = AVassr
 
     CALayer *layer = self.layerArray[self.typeSeg.selectedSegmentIndex];
     __weak __typeof(self)weakSelf = self;
