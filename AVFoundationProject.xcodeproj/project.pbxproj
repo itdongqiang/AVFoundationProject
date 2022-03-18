@@ -1,0 +1,572 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8CB8399027D4BCF9000309A4 /* TTAVImageToVideo1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CB8398F27D4BCF9000309A4 /* TTAVImageToVideo1ViewController.m */; };
+		8CB8399A27D4BF82000309A4 /* TTAVBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CB8399927D4BF82000309A4 /* TTAVBaseViewController.m */; };
+		8CB839B027D5CF4C000309A4 /* black.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8CB839AF27D5CF4C000309A4 /* black.mp4 */; };
+		8CB839B327D5EC01000309A4 /* TTAVLivePhotoToVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CB839B227D5EC01000309A4 /* TTAVLivePhotoToVideoViewController.m */; };
+		8CB839BA27D8CD89000309A4 /* TTAVAssetDataFormatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CB839B927D8CD88000309A4 /* TTAVAssetDataFormatViewController.m */; };
+		8CB839BD27DA0909000309A4 /* TTAVVideoPasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CB839BC27DA0909000309A4 /* TTAVVideoPasterViewController.m */; };
+		8CB839C127DA25C2000309A4 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CB839C027DA25C2000309A4 /* logo.png */; };
+		8CEB340127DACC0D007E7564 /* gif.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8CEB340027DACC0D007E7564 /* gif.gif */; };
+		8CF216AB27D058BD00964C65 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CF216AA27D058BD00964C65 /* AppDelegate.m */; };
+		8CF216AE27D058BD00964C65 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CF216AD27D058BD00964C65 /* SceneDelegate.m */; };
+		8CF216B127D058BD00964C65 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CF216B027D058BD00964C65 /* ViewController.m */; };
+		8CF216B627D058BE00964C65 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CF216B527D058BE00964C65 /* Assets.xcassets */; };
+		8CF216B927D058BE00964C65 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CF216B727D058BE00964C65 /* LaunchScreen.storyboard */; };
+		8CF216BC27D058BE00964C65 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CF216BB27D058BE00964C65 /* main.m */; };
+		8CF216C327D0599200964C65 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CF216C227D0599200964C65 /* Main.storyboard */; };
+		8CF216D327D0605700964C65 /* TTAVAudioLayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CF216D127D0605700964C65 /* TTAVAudioLayerController.m */; };
+		8CF216D927D0710E00964C65 /* TTAVAudioEngineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CF216D827D0710E00964C65 /* TTAVAudioEngineViewController.m */; };
+		8CF216DD27D0D17200964C65 /* hdr.MOV in Resources */ = {isa = PBXBuildFile; fileRef = 8CF216DC27D0D17200964C65 /* hdr.MOV */; };
+		8CF216E227D1E5D100964C65 /* TTAVVideoComposition1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CF216E127D1E5D100964C65 /* TTAVVideoComposition1ViewController.m */; };
+		8CF2170227D31CD800964C65 /* TTAVVideoCompositionTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CF2170127D31CD800964C65 /* TTAVVideoCompositionTool.m */; };
+		8CF2170527D3383B00964C65 /* TTAVVideoExportTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CF2170427D3383B00964C65 /* TTAVVideoExportTool.m */; };
+		8CF2170727D3450B00964C65 /* bgm.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8CF2170627D3450B00964C65 /* bgm.mp3 */; };
+		FC2578A1ADAB5D663CAAE061 /* Pods_AVFoundationProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5831ACB792BFBDD73E1A1563 /* Pods_AVFoundationProject.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5831ACB792BFBDD73E1A1563 /* Pods_AVFoundationProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AVFoundationProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5AD9A648A0DF9CEA9799F1F7 /* Pods-AVFoundationProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AVFoundationProject.debug.xcconfig"; path = "Target Support Files/Pods-AVFoundationProject/Pods-AVFoundationProject.debug.xcconfig"; sourceTree = "<group>"; };
+		8CB8398E27D4BCF9000309A4 /* TTAVImageToVideo1ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTAVImageToVideo1ViewController.h; sourceTree = "<group>"; };
+		8CB8398F27D4BCF9000309A4 /* TTAVImageToVideo1ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTAVImageToVideo1ViewController.m; sourceTree = "<group>"; };
+		8CB8399827D4BF82000309A4 /* TTAVBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTAVBaseViewController.h; sourceTree = "<group>"; };
+		8CB8399927D4BF82000309A4 /* TTAVBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTAVBaseViewController.m; sourceTree = "<group>"; };
+		8CB839AF27D5CF4C000309A4 /* black.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = black.mp4; sourceTree = "<group>"; };
+		8CB839B127D5EC01000309A4 /* TTAVLivePhotoToVideoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTAVLivePhotoToVideoViewController.h; sourceTree = "<group>"; };
+		8CB839B227D5EC01000309A4 /* TTAVLivePhotoToVideoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTAVLivePhotoToVideoViewController.m; sourceTree = "<group>"; };
+		8CB839B827D8CD88000309A4 /* TTAVAssetDataFormatViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTAVAssetDataFormatViewController.h; sourceTree = "<group>"; };
+		8CB839B927D8CD88000309A4 /* TTAVAssetDataFormatViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTAVAssetDataFormatViewController.m; sourceTree = "<group>"; };
+		8CB839BB27DA0909000309A4 /* TTAVVideoPasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTAVVideoPasterViewController.h; sourceTree = "<group>"; };
+		8CB839BC27DA0909000309A4 /* TTAVVideoPasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTAVVideoPasterViewController.m; sourceTree = "<group>"; };
+		8CB839C027DA25C2000309A4 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		8CEB340027DACC0D007E7564 /* gif.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = gif.gif; sourceTree = "<group>"; };
+		8CF216A627D058BD00964C65 /* AVFoundationProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AVFoundationProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CF216A927D058BD00964C65 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8CF216AA27D058BD00964C65 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8CF216AC27D058BD00964C65 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		8CF216AD27D058BD00964C65 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		8CF216AF27D058BD00964C65 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		8CF216B027D058BD00964C65 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		8CF216B527D058BE00964C65 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8CF216B827D058BE00964C65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8CF216BA27D058BE00964C65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8CF216BB27D058BE00964C65 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8CF216C227D0599200964C65 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		8CF216D127D0605700964C65 /* TTAVAudioLayerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTAVAudioLayerController.m; sourceTree = "<group>"; };
+		8CF216D227D0605700964C65 /* TTAVAudioLayerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTAVAudioLayerController.h; sourceTree = "<group>"; };
+		8CF216D727D0710E00964C65 /* TTAVAudioEngineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTAVAudioEngineViewController.h; sourceTree = "<group>"; };
+		8CF216D827D0710E00964C65 /* TTAVAudioEngineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTAVAudioEngineViewController.m; sourceTree = "<group>"; };
+		8CF216DC27D0D17200964C65 /* hdr.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = hdr.MOV; sourceTree = "<group>"; };
+		8CF216E027D1E5D100964C65 /* TTAVVideoComposition1ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTAVVideoComposition1ViewController.h; sourceTree = "<group>"; };
+		8CF216E127D1E5D100964C65 /* TTAVVideoComposition1ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTAVVideoComposition1ViewController.m; sourceTree = "<group>"; };
+		8CF2170027D31CD800964C65 /* TTAVVideoCompositionTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTAVVideoCompositionTool.h; sourceTree = "<group>"; };
+		8CF2170127D31CD800964C65 /* TTAVVideoCompositionTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTAVVideoCompositionTool.m; sourceTree = "<group>"; };
+		8CF2170327D3383B00964C65 /* TTAVVideoExportTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTAVVideoExportTool.h; sourceTree = "<group>"; };
+		8CF2170427D3383B00964C65 /* TTAVVideoExportTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTAVVideoExportTool.m; sourceTree = "<group>"; };
+		8CF2170627D3450B00964C65 /* bgm.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bgm.mp3; sourceTree = "<group>"; };
+		BFE06B68882DDBF6338013F8 /* Pods-AVFoundationProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AVFoundationProject.release.xcconfig"; path = "Target Support Files/Pods-AVFoundationProject/Pods-AVFoundationProject.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8CF216A327D058BD00964C65 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC2578A1ADAB5D663CAAE061 /* Pods_AVFoundationProject.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		171EF5813A75FBB4159BFC74 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5AD9A648A0DF9CEA9799F1F7 /* Pods-AVFoundationProject.debug.xcconfig */,
+				BFE06B68882DDBF6338013F8 /* Pods-AVFoundationProject.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		8CB8398D27D4BCCA000309A4 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				8CB8398E27D4BCF9000309A4 /* TTAVImageToVideo1ViewController.h */,
+				8CB8398F27D4BCF9000309A4 /* TTAVImageToVideo1ViewController.m */,
+				8CB839B127D5EC01000309A4 /* TTAVLivePhotoToVideoViewController.h */,
+				8CB839B227D5EC01000309A4 /* TTAVLivePhotoToVideoViewController.m */,
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
+		8CB8399427D4BF08000309A4 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				8CF2170327D3383B00964C65 /* TTAVVideoExportTool.h */,
+				8CF2170427D3383B00964C65 /* TTAVVideoExportTool.m */,
+				8CB8399827D4BF82000309A4 /* TTAVBaseViewController.h */,
+				8CB8399927D4BF82000309A4 /* TTAVBaseViewController.m */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		8CB839B727D8CD74000309A4 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				8CB839B827D8CD88000309A4 /* TTAVAssetDataFormatViewController.h */,
+				8CB839B927D8CD88000309A4 /* TTAVAssetDataFormatViewController.m */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		8CF2169D27D058BD00964C65 = {
+			isa = PBXGroup;
+			children = (
+				8CF216A827D058BD00964C65 /* AVFoundationProject */,
+				8CF216A727D058BD00964C65 /* Products */,
+				171EF5813A75FBB4159BFC74 /* Pods */,
+				BC8E1F8F7EC6E0C369E371F2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8CF216A727D058BD00964C65 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8CF216A627D058BD00964C65 /* AVFoundationProject.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8CF216A827D058BD00964C65 /* AVFoundationProject */ = {
+			isa = PBXGroup;
+			children = (
+				8CF216D027D0604700964C65 /* Audio */,
+				8CF216CB27D05D2F00964C65 /* Video */,
+				8CB8398D27D4BCCA000309A4 /* Image */,
+				8CF216AA27D058BD00964C65 /* AppDelegate.m */,
+				8CF216A927D058BD00964C65 /* AppDelegate.h */,
+				8CB839B727D8CD74000309A4 /* Other */,
+				8CB8399427D4BF08000309A4 /* Tools */,
+				8CF216AC27D058BD00964C65 /* SceneDelegate.h */,
+				8CF216AD27D058BD00964C65 /* SceneDelegate.m */,
+				8CF216AF27D058BD00964C65 /* ViewController.h */,
+				8CF216B027D058BD00964C65 /* ViewController.m */,
+				8CF216C227D0599200964C65 /* Main.storyboard */,
+				8CF216B527D058BE00964C65 /* Assets.xcassets */,
+				8CF216D427D0620F00964C65 /* Resourse */,
+				8CF216B727D058BE00964C65 /* LaunchScreen.storyboard */,
+				8CF216BA27D058BE00964C65 /* Info.plist */,
+				8CF216BB27D058BE00964C65 /* main.m */,
+			);
+			path = AVFoundationProject;
+			sourceTree = "<group>";
+		};
+		8CF216CB27D05D2F00964C65 /* Video */ = {
+			isa = PBXGroup;
+			children = (
+				8CF216E027D1E5D100964C65 /* TTAVVideoComposition1ViewController.h */,
+				8CF216E127D1E5D100964C65 /* TTAVVideoComposition1ViewController.m */,
+				8CB839BB27DA0909000309A4 /* TTAVVideoPasterViewController.h */,
+				8CB839BC27DA0909000309A4 /* TTAVVideoPasterViewController.m */,
+				8CF216FF27D31CA700964C65 /* TTAVVideoCompositionTool */,
+			);
+			path = Video;
+			sourceTree = "<group>";
+		};
+		8CF216D027D0604700964C65 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				8CF216D227D0605700964C65 /* TTAVAudioLayerController.h */,
+				8CF216D127D0605700964C65 /* TTAVAudioLayerController.m */,
+				8CF216D727D0710E00964C65 /* TTAVAudioEngineViewController.h */,
+				8CF216D827D0710E00964C65 /* TTAVAudioEngineViewController.m */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
+		8CF216D427D0620F00964C65 /* Resourse */ = {
+			isa = PBXGroup;
+			children = (
+				8CB839AF27D5CF4C000309A4 /* black.mp4 */,
+				8CEB340027DACC0D007E7564 /* gif.gif */,
+				8CB839C027DA25C2000309A4 /* logo.png */,
+				8CF2170627D3450B00964C65 /* bgm.mp3 */,
+				8CF216DC27D0D17200964C65 /* hdr.MOV */,
+			);
+			path = Resourse;
+			sourceTree = "<group>";
+		};
+		8CF216FF27D31CA700964C65 /* TTAVVideoCompositionTool */ = {
+			isa = PBXGroup;
+			children = (
+				8CF2170027D31CD800964C65 /* TTAVVideoCompositionTool.h */,
+				8CF2170127D31CD800964C65 /* TTAVVideoCompositionTool.m */,
+			);
+			path = TTAVVideoCompositionTool;
+			sourceTree = "<group>";
+		};
+		BC8E1F8F7EC6E0C369E371F2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5831ACB792BFBDD73E1A1563 /* Pods_AVFoundationProject.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8CF216A527D058BD00964C65 /* AVFoundationProject */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8CF216BF27D058BE00964C65 /* Build configuration list for PBXNativeTarget "AVFoundationProject" */;
+			buildPhases = (
+				B9417A349C850875712D8903 /* [CP] Check Pods Manifest.lock */,
+				8CF216A227D058BD00964C65 /* Sources */,
+				8CF216A327D058BD00964C65 /* Frameworks */,
+				8CF216A427D058BD00964C65 /* Resources */,
+				36C688CF75ACE32C0F75CEEA /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AVFoundationProject;
+			productName = AVFoundationProject;
+			productReference = 8CF216A627D058BD00964C65 /* AVFoundationProject.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8CF2169E27D058BD00964C65 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					8CF216A527D058BD00964C65 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 8CF216A127D058BD00964C65 /* Build configuration list for PBXProject "AVFoundationProject" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8CF2169D27D058BD00964C65;
+			productRefGroup = 8CF216A727D058BD00964C65 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8CF216A527D058BD00964C65 /* AVFoundationProject */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8CF216A427D058BD00964C65 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CB839B027D5CF4C000309A4 /* black.mp4 in Resources */,
+				8CEB340127DACC0D007E7564 /* gif.gif in Resources */,
+				8CF216C327D0599200964C65 /* Main.storyboard in Resources */,
+				8CF216B927D058BE00964C65 /* LaunchScreen.storyboard in Resources */,
+				8CF2170727D3450B00964C65 /* bgm.mp3 in Resources */,
+				8CB839C127DA25C2000309A4 /* logo.png in Resources */,
+				8CF216DD27D0D17200964C65 /* hdr.MOV in Resources */,
+				8CF216B627D058BE00964C65 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		36C688CF75ACE32C0F75CEEA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AVFoundationProject/Pods-AVFoundationProject-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AVFoundationProject/Pods-AVFoundationProject-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AVFoundationProject/Pods-AVFoundationProject-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B9417A349C850875712D8903 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AVFoundationProject-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8CF216A227D058BD00964C65 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CF216B127D058BD00964C65 /* ViewController.m in Sources */,
+				8CF216AB27D058BD00964C65 /* AppDelegate.m in Sources */,
+				8CF2170527D3383B00964C65 /* TTAVVideoExportTool.m in Sources */,
+				8CF216E227D1E5D100964C65 /* TTAVVideoComposition1ViewController.m in Sources */,
+				8CB839BD27DA0909000309A4 /* TTAVVideoPasterViewController.m in Sources */,
+				8CB8399A27D4BF82000309A4 /* TTAVBaseViewController.m in Sources */,
+				8CF216D927D0710E00964C65 /* TTAVAudioEngineViewController.m in Sources */,
+				8CF216D327D0605700964C65 /* TTAVAudioLayerController.m in Sources */,
+				8CF2170227D31CD800964C65 /* TTAVVideoCompositionTool.m in Sources */,
+				8CF216BC27D058BE00964C65 /* main.m in Sources */,
+				8CB839B327D5EC01000309A4 /* TTAVLivePhotoToVideoViewController.m in Sources */,
+				8CB839BA27D8CD89000309A4 /* TTAVAssetDataFormatViewController.m in Sources */,
+				8CB8399027D4BCF9000309A4 /* TTAVImageToVideo1ViewController.m in Sources */,
+				8CF216AE27D058BD00964C65 /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8CF216B727D058BE00964C65 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8CF216B827D058BE00964C65 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8CF216BD27D058BE00964C65 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8CF216BE27D058BE00964C65 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8CF216C027D058BE00964C65 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5AD9A648A0DF9CEA9799F1F7 /* Pods-AVFoundationProject.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WZPEKQL9HE;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AVFoundationProject/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "权限";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "访问麦克风";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "访问相册";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sdb2bei-b2ib.AVFoundationProject";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8CF216C127D058BE00964C65 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFE06B68882DDBF6338013F8 /* Pods-AVFoundationProject.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WZPEKQL9HE;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AVFoundationProject/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "权限";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "访问麦克风";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "访问相册";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sdb2bei-b2ib.AVFoundationProject";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8CF216A127D058BD00964C65 /* Build configuration list for PBXProject "AVFoundationProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8CF216BD27D058BE00964C65 /* Debug */,
+				8CF216BE27D058BE00964C65 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8CF216BF27D058BE00964C65 /* Build configuration list for PBXNativeTarget "AVFoundationProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8CF216C027D058BE00964C65 /* Debug */,
+				8CF216C127D058BE00964C65 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8CF2169E27D058BD00964C65 /* Project object */;
+}
