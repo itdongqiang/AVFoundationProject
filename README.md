@@ -1,6 +1,17 @@
 
 # AVFoundationDemo
-1、音频录制与播放
+音频：
+    1. AVAudioPlayer音频播放
+    2. AVAudioEngineRecorder音频录制
+视频：
+    1. 视频拼接合成、添加背景音乐、转场效果
+    2.视频添加贴纸、文字、gif表情包
+图片： 
+    1. 图片转视频
+    2. 实况照片转视频、gif转视频
+其他：
+    1. 获取音视频元数据格式         
+    
 2、视频拼接，转场过渡效果、添加背景音乐
 3、gif转视频
 4、live photo转视频
