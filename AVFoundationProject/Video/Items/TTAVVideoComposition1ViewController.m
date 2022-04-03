@@ -23,6 +23,10 @@
 
 @implementation TTAVVideoComposition1ViewController
 
+- (instancetype)init{
+    return [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"TTAVVideoComposition1ViewController"];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.fileUrl = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"gif" ofType:@"gif"]];

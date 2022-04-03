@@ -19,6 +19,11 @@
 @end
 
 @implementation TTAVAudioEngineViewController
+
+- (instancetype)init{
+    return [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"TTAVAudioEngineViewController"];
+}
+
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     [self setupEngine];

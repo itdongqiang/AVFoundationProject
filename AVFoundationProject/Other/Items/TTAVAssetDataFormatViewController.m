@@ -13,8 +13,11 @@
 @end
 
 
-
 @implementation TTAVAssetDataFormatViewController
+
+- (instancetype)init{
+    return [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"TTAVAssetDataFormatViewController"];
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];

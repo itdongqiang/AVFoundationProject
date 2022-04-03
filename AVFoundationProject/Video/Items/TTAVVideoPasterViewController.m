@@ -20,6 +20,10 @@
 
 @implementation TTAVVideoPasterViewController
 
+- (instancetype)init{
+    return [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"TTAVVideoPasterViewController"];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.fileUrl = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"gif" ofType:@"gif"]];

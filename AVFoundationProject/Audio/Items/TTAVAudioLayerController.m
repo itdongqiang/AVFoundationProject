@@ -21,6 +21,10 @@
 
 @implementation TTAVAudioLayerController
 
+- (instancetype)init{
+    return [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"TTAVAudioLayerController"];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self test];
@@ -56,7 +60,7 @@
 }
 
 -(void)createAVAudioPlayer{
-    NSString *pathStr = [[NSBundle mainBundle] pathForResource:@"夜空中最亮的星" ofType:@"mp3"];
+    NSString *pathStr = [[NSBundle mainBundle] pathForResource:@"bgm" ofType:@"mp3"];
     NSURL *url = [NSURL fileURLWithPath:pathStr];
     _player = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:nil];
     [_player prepareToPlay];

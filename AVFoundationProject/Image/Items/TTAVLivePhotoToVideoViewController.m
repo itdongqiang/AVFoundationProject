@@ -14,6 +14,10 @@
 
 @implementation TTAVLivePhotoToVideoViewController
 
+- (instancetype)init{
+    return [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"TTAVLivePhotoToVideoViewController"];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setUpMediaPickerWithMediaType:WPMediaTypeAll allowMultipleSelection:NO delegate:self];

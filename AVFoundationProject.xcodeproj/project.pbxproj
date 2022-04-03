@@ -7,11 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8C97809727F9874800C9553F /* TTAVVideoCatlogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C97809627F9874800C9553F /* TTAVVideoCatlogViewController.m */; };
+		8C97809C27F98E7400C9553F /* TTAVAudioCatlogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C97809B27F98E7400C9553F /* TTAVAudioCatlogViewController.m */; };
+		8C9780A127F9915100C9553F /* TTAVImageCatlogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C9780A027F9915100C9553F /* TTAVImageCatlogViewController.m */; };
+		8C9780B527F9949A00C9553F /* TTAVOtherCatlogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C9780B027F9949A00C9553F /* TTAVOtherCatlogViewController.m */; };
+		8C9780B627F9949A00C9553F /* TTAVAssetDataFormatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C9780B427F9949A00C9553F /* TTAVAssetDataFormatViewController.m */; };
 		8CB8399027D4BCF9000309A4 /* TTAVImageToVideo1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CB8398F27D4BCF9000309A4 /* TTAVImageToVideo1ViewController.m */; };
 		8CB8399A27D4BF82000309A4 /* TTAVBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CB8399927D4BF82000309A4 /* TTAVBaseViewController.m */; };
 		8CB839B027D5CF4C000309A4 /* black.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8CB839AF27D5CF4C000309A4 /* black.mp4 */; };
 		8CB839B327D5EC01000309A4 /* TTAVLivePhotoToVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CB839B227D5EC01000309A4 /* TTAVLivePhotoToVideoViewController.m */; };
-		8CB839BA27D8CD89000309A4 /* TTAVAssetDataFormatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CB839B927D8CD88000309A4 /* TTAVAssetDataFormatViewController.m */; };
 		8CB839BD27DA0909000309A4 /* TTAVVideoPasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CB839BC27DA0909000309A4 /* TTAVVideoPasterViewController.m */; };
 		8CB839C127DA25C2000309A4 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CB839C027DA25C2000309A4 /* logo.png */; };
 		8CEB340127DACC0D007E7564 /* gif.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8CEB340027DACC0D007E7564 /* gif.gif */; };
@@ -35,6 +39,16 @@
 /* Begin PBXFileReference section */
 		5831ACB792BFBDD73E1A1563 /* Pods_AVFoundationProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AVFoundationProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AD9A648A0DF9CEA9799F1F7 /* Pods-AVFoundationProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AVFoundationProject.debug.xcconfig"; path = "Target Support Files/Pods-AVFoundationProject/Pods-AVFoundationProject.debug.xcconfig"; sourceTree = "<group>"; };
+		8C97809527F9874800C9553F /* TTAVVideoCatlogViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTAVVideoCatlogViewController.h; sourceTree = "<group>"; };
+		8C97809627F9874800C9553F /* TTAVVideoCatlogViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTAVVideoCatlogViewController.m; sourceTree = "<group>"; };
+		8C97809A27F98E7400C9553F /* TTAVAudioCatlogViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTAVAudioCatlogViewController.h; sourceTree = "<group>"; };
+		8C97809B27F98E7400C9553F /* TTAVAudioCatlogViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTAVAudioCatlogViewController.m; sourceTree = "<group>"; };
+		8C97809F27F9915100C9553F /* TTAVImageCatlogViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTAVImageCatlogViewController.h; sourceTree = "<group>"; };
+		8C9780A027F9915100C9553F /* TTAVImageCatlogViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTAVImageCatlogViewController.m; sourceTree = "<group>"; };
+		8C9780B027F9949A00C9553F /* TTAVOtherCatlogViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTAVOtherCatlogViewController.m; sourceTree = "<group>"; };
+		8C9780B127F9949A00C9553F /* TTAVOtherCatlogViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTAVOtherCatlogViewController.h; sourceTree = "<group>"; };
+		8C9780B327F9949A00C9553F /* TTAVAssetDataFormatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTAVAssetDataFormatViewController.h; sourceTree = "<group>"; };
+		8C9780B427F9949A00C9553F /* TTAVAssetDataFormatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTAVAssetDataFormatViewController.m; sourceTree = "<group>"; };
 		8CB8398E27D4BCF9000309A4 /* TTAVImageToVideo1ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTAVImageToVideo1ViewController.h; sourceTree = "<group>"; };
 		8CB8398F27D4BCF9000309A4 /* TTAVImageToVideo1ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTAVImageToVideo1ViewController.m; sourceTree = "<group>"; };
 		8CB8399827D4BF82000309A4 /* TTAVBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTAVBaseViewController.h; sourceTree = "<group>"; };
@@ -42,8 +56,6 @@
 		8CB839AF27D5CF4C000309A4 /* black.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = black.mp4; sourceTree = "<group>"; };
 		8CB839B127D5EC01000309A4 /* TTAVLivePhotoToVideoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTAVLivePhotoToVideoViewController.h; sourceTree = "<group>"; };
 		8CB839B227D5EC01000309A4 /* TTAVLivePhotoToVideoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTAVLivePhotoToVideoViewController.m; sourceTree = "<group>"; };
-		8CB839B827D8CD88000309A4 /* TTAVAssetDataFormatViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTAVAssetDataFormatViewController.h; sourceTree = "<group>"; };
-		8CB839B927D8CD88000309A4 /* TTAVAssetDataFormatViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTAVAssetDataFormatViewController.m; sourceTree = "<group>"; };
 		8CB839BB27DA0909000309A4 /* TTAVVideoPasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTAVVideoPasterViewController.h; sourceTree = "<group>"; };
 		8CB839BC27DA0909000309A4 /* TTAVVideoPasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTAVVideoPasterViewController.m; sourceTree = "<group>"; };
 		8CB839C027DA25C2000309A4 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
@@ -96,13 +108,89 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		8CB8398D27D4BCCA000309A4 /* Image */ = {
+		8C97809327F9866400C9553F /* ItemsCatlog */ = {
+			isa = PBXGroup;
+			children = (
+				8C97809527F9874800C9553F /* TTAVVideoCatlogViewController.h */,
+				8C97809627F9874800C9553F /* TTAVVideoCatlogViewController.m */,
+			);
+			path = ItemsCatlog;
+			sourceTree = "<group>";
+		};
+		8C97809427F986B400C9553F /* Items */ = {
+			isa = PBXGroup;
+			children = (
+				8CF216E027D1E5D100964C65 /* TTAVVideoComposition1ViewController.h */,
+				8CF216E127D1E5D100964C65 /* TTAVVideoComposition1ViewController.m */,
+				8CB839BB27DA0909000309A4 /* TTAVVideoPasterViewController.h */,
+				8CB839BC27DA0909000309A4 /* TTAVVideoPasterViewController.m */,
+			);
+			path = Items;
+			sourceTree = "<group>";
+		};
+		8C97809827F98E2900C9553F /* ItemsCatlog */ = {
+			isa = PBXGroup;
+			children = (
+				8C97809A27F98E7400C9553F /* TTAVAudioCatlogViewController.h */,
+				8C97809B27F98E7400C9553F /* TTAVAudioCatlogViewController.m */,
+			);
+			path = ItemsCatlog;
+			sourceTree = "<group>";
+		};
+		8C97809927F98E2900C9553F /* Items */ = {
+			isa = PBXGroup;
+			children = (
+				8CF216D227D0605700964C65 /* TTAVAudioLayerController.h */,
+				8CF216D127D0605700964C65 /* TTAVAudioLayerController.m */,
+				8CF216D727D0710E00964C65 /* TTAVAudioEngineViewController.h */,
+				8CF216D827D0710E00964C65 /* TTAVAudioEngineViewController.m */,
+			);
+			path = Items;
+			sourceTree = "<group>";
+		};
+		8C97809D27F9914A00C9553F /* Items */ = {
 			isa = PBXGroup;
 			children = (
 				8CB8398E27D4BCF9000309A4 /* TTAVImageToVideo1ViewController.h */,
 				8CB8398F27D4BCF9000309A4 /* TTAVImageToVideo1ViewController.m */,
 				8CB839B127D5EC01000309A4 /* TTAVLivePhotoToVideoViewController.h */,
 				8CB839B227D5EC01000309A4 /* TTAVLivePhotoToVideoViewController.m */,
+			);
+			path = Items;
+			sourceTree = "<group>";
+		};
+		8C97809E27F9915100C9553F /* ItemsCatlog */ = {
+			isa = PBXGroup;
+			children = (
+				8C97809F27F9915100C9553F /* TTAVImageCatlogViewController.h */,
+				8C9780A027F9915100C9553F /* TTAVImageCatlogViewController.m */,
+			);
+			path = ItemsCatlog;
+			sourceTree = "<group>";
+		};
+		8C9780AF27F9949A00C9553F /* ItemsCatlog */ = {
+			isa = PBXGroup;
+			children = (
+				8C9780B027F9949A00C9553F /* TTAVOtherCatlogViewController.m */,
+				8C9780B127F9949A00C9553F /* TTAVOtherCatlogViewController.h */,
+			);
+			path = ItemsCatlog;
+			sourceTree = "<group>";
+		};
+		8C9780B227F9949A00C9553F /* Items */ = {
+			isa = PBXGroup;
+			children = (
+				8C9780B327F9949A00C9553F /* TTAVAssetDataFormatViewController.h */,
+				8C9780B427F9949A00C9553F /* TTAVAssetDataFormatViewController.m */,
+			);
+			path = Items;
+			sourceTree = "<group>";
+		};
+		8CB8398D27D4BCCA000309A4 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				8C97809D27F9914A00C9553F /* Items */,
+				8C97809E27F9915100C9553F /* ItemsCatlog */,
 			);
 			path = Image;
 			sourceTree = "<group>";
@@ -121,8 +209,8 @@
 		8CB839B727D8CD74000309A4 /* Other */ = {
 			isa = PBXGroup;
 			children = (
-				8CB839B827D8CD88000309A4 /* TTAVAssetDataFormatViewController.h */,
-				8CB839B927D8CD88000309A4 /* TTAVAssetDataFormatViewController.m */,
+				8C9780B227F9949A00C9553F /* Items */,
+				8C9780AF27F9949A00C9553F /* ItemsCatlog */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -172,11 +260,9 @@
 		8CF216CB27D05D2F00964C65 /* Video */ = {
 			isa = PBXGroup;
 			children = (
-				8CF216E027D1E5D100964C65 /* TTAVVideoComposition1ViewController.h */,
-				8CF216E127D1E5D100964C65 /* TTAVVideoComposition1ViewController.m */,
-				8CB839BB27DA0909000309A4 /* TTAVVideoPasterViewController.h */,
-				8CB839BC27DA0909000309A4 /* TTAVVideoPasterViewController.m */,
-				8CF216FF27D31CA700964C65 /* TTAVVideoCompositionTool */,
+				8C97809427F986B400C9553F /* Items */,
+				8C97809327F9866400C9553F /* ItemsCatlog */,
+				8CF216FF27D31CA700964C65 /* CompositionTool */,
 			);
 			path = Video;
 			sourceTree = "<group>";
@@ -184,10 +270,8 @@
 		8CF216D027D0604700964C65 /* Audio */ = {
 			isa = PBXGroup;
 			children = (
-				8CF216D227D0605700964C65 /* TTAVAudioLayerController.h */,
-				8CF216D127D0605700964C65 /* TTAVAudioLayerController.m */,
-				8CF216D727D0710E00964C65 /* TTAVAudioEngineViewController.h */,
-				8CF216D827D0710E00964C65 /* TTAVAudioEngineViewController.m */,
+				8C97809927F98E2900C9553F /* Items */,
+				8C97809827F98E2900C9553F /* ItemsCatlog */,
 			);
 			path = Audio;
 			sourceTree = "<group>";
@@ -204,13 +288,13 @@
 			path = Resourse;
 			sourceTree = "<group>";
 		};
-		8CF216FF27D31CA700964C65 /* TTAVVideoCompositionTool */ = {
+		8CF216FF27D31CA700964C65 /* CompositionTool */ = {
 			isa = PBXGroup;
 			children = (
 				8CF2170027D31CD800964C65 /* TTAVVideoCompositionTool.h */,
 				8CF2170127D31CD800964C65 /* TTAVVideoCompositionTool.m */,
 			);
-			path = TTAVVideoCompositionTool;
+			path = CompositionTool;
 			sourceTree = "<group>";
 		};
 		BC8E1F8F7EC6E0C369E371F2 /* Frameworks */ = {
@@ -345,15 +429,19 @@
 				8CF2170527D3383B00964C65 /* TTAVVideoExportTool.m in Sources */,
 				8CF216E227D1E5D100964C65 /* TTAVVideoComposition1ViewController.m in Sources */,
 				8CB839BD27DA0909000309A4 /* TTAVVideoPasterViewController.m in Sources */,
+				8C9780A127F9915100C9553F /* TTAVImageCatlogViewController.m in Sources */,
+				8C97809727F9874800C9553F /* TTAVVideoCatlogViewController.m in Sources */,
 				8CB8399A27D4BF82000309A4 /* TTAVBaseViewController.m in Sources */,
 				8CF216D927D0710E00964C65 /* TTAVAudioEngineViewController.m in Sources */,
+				8C9780B527F9949A00C9553F /* TTAVOtherCatlogViewController.m in Sources */,
 				8CF216D327D0605700964C65 /* TTAVAudioLayerController.m in Sources */,
+				8C97809C27F98E7400C9553F /* TTAVAudioCatlogViewController.m in Sources */,
 				8CF2170227D31CD800964C65 /* TTAVVideoCompositionTool.m in Sources */,
 				8CF216BC27D058BE00964C65 /* main.m in Sources */,
 				8CB839B327D5EC01000309A4 /* TTAVLivePhotoToVideoViewController.m in Sources */,
-				8CB839BA27D8CD89000309A4 /* TTAVAssetDataFormatViewController.m in Sources */,
 				8CB8399027D4BCF9000309A4 /* TTAVImageToVideo1ViewController.m in Sources */,
 				8CF216AE27D058BD00964C65 /* SceneDelegate.m in Sources */,
+				8C9780B627F9949A00C9553F /* TTAVAssetDataFormatViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -510,7 +598,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sdb2bei-b2ib.AVFoundationProject";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -541,7 +629,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sdb2bei-b2ib.AVFoundationProject";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
