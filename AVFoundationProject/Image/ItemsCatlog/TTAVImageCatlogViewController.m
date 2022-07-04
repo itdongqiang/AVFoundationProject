@@ -52,7 +52,7 @@
 
 - (NSDictionary *)catelogItems{
     if (!_catelogItems) {
-        _catelogItems = @{@"": @[@"1.静态图转视频",
+        _catelogItems = @{@"AVFoundation": @[@"1.静态图转视频",
                    @"2.live photo/gif转视频",
         ]};
     }
@@ -61,7 +61,7 @@
 
 - (NSDictionary *)viewControllerItems{
     if (!_viewControllerItems) {
-        _viewControllerItems = @{@"图片": @[@"TTAVImageToVideo1ViewController",
+        _viewControllerItems = @{@"AVFoundation": @[@"TTAVImageToVideo1ViewController",
                    @"TTAVLivePhotoToVideoViewController",
         ]};
     }

@@ -52,7 +52,7 @@
 
 - (NSDictionary *)catelogItems{
     if (!_catelogItems) {
-        _catelogItems = @{@"格式信息": @[@"获取视频元数据格式",
+        _catelogItems = @{@"AVFoundation": @[@"获取视频样本格式",
         ]};
     }
     return _catelogItems;

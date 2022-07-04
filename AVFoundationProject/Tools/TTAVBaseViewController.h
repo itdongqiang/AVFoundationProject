@@ -11,6 +11,8 @@
 #import <AVFoundation/AVFoundation.h>
 #import <AVKit/AVKit.h>
 #import "TTAVVideoCompositionTool.h"
+#import "TTAVCaptureSession.h"
+
 NS_ASSUME_NONNULL_BEGIN
 
 @interface TTAVBaseViewController : UIViewController

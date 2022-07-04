@@ -52,7 +52,7 @@
 
 - (NSDictionary *)catelogItems{
     if (!_catelogItems) {
-        _catelogItems = @{@"": @[@"1.AVAudioPlayer音频播放",
+        _catelogItems = @{@"AVFoundation": @[@"1.AVAudioPlayer音频播放",
                    @"2.AVAudioEngine Recorder音频录制",
         ]};
     }
@@ -61,7 +61,7 @@
 
 - (NSDictionary *)viewControllerItems{
     if (!_viewControllerItems) {
-        _viewControllerItems = @{@"音频": @[@"TTAVAudioLayerController",
+        _viewControllerItems = @{@"AVFoundation": @[@"TTAVAudioLayerController",
                    @"TTAVAudioEngineViewController",
         ]};
     }

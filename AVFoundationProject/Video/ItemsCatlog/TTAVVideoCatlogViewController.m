@@ -54,18 +54,26 @@
 
 - (NSDictionary *)catelogItems{
     if (!_catelogItems) {
-        _catelogItems = @{@"视频": @[@"1.视频合成/BGM/转场",
-                   @"2.贴纸、文字、gif",
-        ]};
+        _catelogItems = @{@"AVFoundation": @[
+                            @"1.视频合成/BGM/转场",
+                            @"2.贴纸、文字、gif",
+        ],
+                          @"Video Toolbox": @[
+                              @"1.视频硬编码",
+                              @"2.视频硬解码(解码1中的.h264文件)",]};
     }
     return _catelogItems;
 }
 
 - (NSDictionary *)viewControllerItems{
     if (!_viewControllerItems) {
-        _viewControllerItems = @{@"合成": @[@"TTAVVideoComposition1ViewController",
-                   @"TTAVVideoPasterViewController",
-        ]};
+        _viewControllerItems = @{@"AVFoundation": @[
+                                    @"TTAVVideoComposition1ViewController",
+                                    @"TTAVVideoPasterViewController",
+        ],
+                                 @"Video Toolbox": @[
+                                    @"TTAVVTVideoEncodeViewController",
+                                    @"TTAVVTVideoDecodeViewController"]};
     }
     return _viewControllerItems;
 }
