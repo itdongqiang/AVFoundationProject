@@ -26,7 +26,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8mS-Sg-3qg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4049" y="1274"/>
+            <point key="canvasLocation" x="-4508" y="1983"/>
         </scene>
         <!--视频-->
         <scene sceneID="5jg-oD-fhM">
@@ -634,28 +634,17 @@
                                     <action selector="startRecording:" destination="AfZ-fL-umu" eventType="touchUpInside" id="8H1-Xk-o4p"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WfC-g6-7xe">
-                                <rect key="frame" x="147" y="168" width="82" height="31"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="82" id="iwH-tY-jRI"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="结束录制"/>
-                                <connections>
-                                    <action selector="stopRecording:" destination="AfZ-fL-umu" eventType="touchUpInside" id="jhg-i2-9RZ"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="ACK-xm-xkq" firstAttribute="top" secondItem="MnQ-3D-Kzt" secondAttribute="bottom" constant="76" id="C5T-Mg-HgI"/>
-                            <constraint firstAttribute="trailing" secondItem="WfC-g6-7xe" secondAttribute="trailing" constant="146" id="Orj-Lz-wxq"/>
                             <constraint firstItem="ACK-xm-xkq" firstAttribute="leading" secondItem="Uho-yH-WgI" secondAttribute="leading" constant="147" id="byZ-qh-3g0"/>
-                            <constraint firstItem="WfC-g6-7xe" firstAttribute="top" secondItem="ACK-xm-xkq" secondAttribute="bottom" constant="61" id="iS0-Ef-Vv0"/>
                             <constraint firstAttribute="trailing" secondItem="ACK-xm-xkq" secondAttribute="trailing" constant="146" id="nPB-I7-LgO"/>
-                            <constraint firstItem="WfC-g6-7xe" firstAttribute="leading" secondItem="Uho-yH-WgI" secondAttribute="leading" constant="147" id="zfT-bo-TWm"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="recorderButton" destination="ACK-xm-xkq" id="Y8i-rD-tZd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h7H-qg-lai" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

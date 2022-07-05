@@ -12,6 +12,8 @@
 
 @property (nonatomic, strong) TTAVCaptureSession *captureSession;
 @property (nonatomic, strong) TTAVVideoEncode *videEncoder;
+@property (weak, nonatomic) IBOutlet UIButton *recorderButton;
+@property (nonatomic, assign) BOOL isRecording;
 
 @end
 
@@ -39,15 +41,20 @@
 }
 
 // 开始采集并编码
-- (IBAction)startRecording:(id)sender {
-    [_videEncoder openfile];
-    [self.captureSession startRunning];
-}
-
-// 结束采集和编码
-- (IBAction)stopRecording:(id)sender {
-    [self.captureSession stopRunning];
-    [_videEncoder closefile];
+- (IBAction)startRecording:(UIButton *)sender {
+    if ([self checkDeviceTypeInvalid]) {
+        return;
+    }
+    if (self.isRecording) {
+        [self.captureSession stopRunning];
+        [_videEncoder closefile];
+        [self.navigationController popViewControllerAnimated:YES];
+    } else {
+        [_videEncoder openfile];
+        [self.captureSession startRunning];
+        [sender setTitle:@"结束录制" forState:UIControlStateNormal];
+    }
+    self.isRecording = !self.isRecording;
 }
 
 // 采集回调

@@ -39,7 +39,7 @@
     
     NSString *file = [NSString stringWithFormat:@"%@/video.h264", [(NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask, YES)) objectAtIndex:0]];
     if (![[NSFileManager defaultManager] fileExistsAtPath:file]) {
-        file = [[NSBundle mainBundle] pathForResource:@"video" ofType:@"h264"];
+        file = [[NSBundle mainBundle] pathForResource:@"video" ofType:@".h264"];
         NSLog(@"没有采集编码的文件，已使用本地文件进行解码");
     }
     // 构造 H264 文件读取器
@@ -79,9 +79,11 @@
 }
 
 - (IBAction)decodeAndReder:(id)sender {
+    if([self checkDeviceTypeInvalid]) {
+        return;
+    }
     // 子线程读取 & 解码
     dispatch_async(dispatch_get_global_queue(0, 0), ^{
-        
         // 循环从 H264 文件中读取 packet（内部以 startCode 分割）
         TTAVPacket *currentPacket = [self->_fileReader nextPacket];
         while (currentPacket != nil) {

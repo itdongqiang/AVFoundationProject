@@ -58,5 +58,9 @@
     }];
 }
 
+- (BOOL)checkDeviceTypeInvalid {
+    self.title = TARGET_IPHONE_SIMULATOR == 1 ? @"当前功能不支持模拟器" : @"";
+    return TARGET_IPHONE_SIMULATOR == 1;
+}
 
 @end

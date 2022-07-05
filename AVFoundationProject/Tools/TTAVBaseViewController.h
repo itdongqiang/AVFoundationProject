@@ -30,6 +30,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)playAssetWithFilePath:(NSString *)path;
 
+// 模拟器不支持运行检查
+- (BOOL)checkDeviceTypeInvalid;
+
 @end
 
 NS_ASSUME_NONNULL_END

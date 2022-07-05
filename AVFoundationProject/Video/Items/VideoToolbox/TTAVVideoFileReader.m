@@ -11,13 +11,11 @@
 
 const uint8_t KStartCode[4] = {0, 0, 0, 1};
 
-@implementation TTAVVideoFileReader {
-    
+@implementation TTAVVideoFileReader
+{
     uint8_t *_tmpBuffer;
-    
     NSInputStream *_fileStream;
-    
-    /// 文件流的当前偏移值
+    // 文件流的当前偏移值
     NSInteger _currentOffset;
 }
 
@@ -25,13 +23,9 @@ const uint8_t KStartCode[4] = {0, 0, 0, 1};
 {
     self = [super init];
     if (self) {
-        
         _tmpBuffer = malloc(MAX_BUFFER_LEN);
-        
         _fileStream = [NSInputStream inputStreamWithFileAtPath: file];
-        
         [_fileStream open];
-        
         _currentOffset = 0;
     }
     return self;
@@ -60,8 +54,6 @@ const uint8_t KStartCode[4] = {0, 0, 0, 1};
                     
                     memmove(_tmpBuffer, _tmpBuffer + packetSize, _currentOffset - packetSize);
                     _currentOffset -= packetSize;
-                    
-                    
                     return vp;
                 }
             }
