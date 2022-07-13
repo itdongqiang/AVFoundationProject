@@ -52,18 +52,27 @@
 
 - (NSDictionary *)catelogItems{
     if (!_catelogItems) {
-        _catelogItems = @{@"AVFoundation": @[@"1.静态图转视频",
-                   @"2.live photo/gif转视频",
-        ]};
+        _catelogItems = @{
+            @"AVFoundation": @[
+                @"1.静态图转视频",
+                @"2.live photo/gif转视频"],
+            @"OpenCV": @[
+                @"1.基础",
+            ]
+        };
     }
     return _catelogItems;
 }
 
 - (NSDictionary *)viewControllerItems{
     if (!_viewControllerItems) {
-        _viewControllerItems = @{@"AVFoundation": @[@"TTAVImageToVideo1ViewController",
-                   @"TTAVLivePhotoToVideoViewController",
-        ]};
+        _viewControllerItems = @{
+            @"AVFoundation": @[
+                @"TTAVImageToVideo1ViewController",
+                @"TTAVLivePhotoToVideoViewController",],
+            @"OpenCV": @[
+                @"TTAVOpenCVSampleBasicViewController"]
+        };
     }
     return _viewControllerItems;
 }

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8C363B6A287BF5B10019680E /* TTAVOpenCVSampleBasicTool.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8C363B69287BF5B10019680E /* TTAVOpenCVSampleBasicTool.mm */; };
+		8C363B6D287BF5E60019680E /* TTAVOpenCVSampleBasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C363B6C287BF5E60019680E /* TTAVOpenCVSampleBasicViewController.m */; };
+		8C363B77287C17E10019680E /* logo2.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C363B76287C17E10019680E /* logo2.png */; };
 		8C3FAE77287298EA0080CA9F /* TTAVVTVideoEncodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C3FAE75287298EA0080CA9F /* TTAVVTVideoEncodeViewController.m */; };
 		8C3FAE7A28729B690080CA9F /* TTAVCaptureSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C3FAE7928729B690080CA9F /* TTAVCaptureSession.m */; };
 		8C3FAE7D2872BD470080CA9F /* TTAVVideoEncode.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C3FAE7C2872BD470080CA9F /* TTAVVideoEncode.m */; };
@@ -47,6 +50,11 @@
 /* Begin PBXFileReference section */
 		5831ACB792BFBDD73E1A1563 /* Pods_AVFoundationProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AVFoundationProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AD9A648A0DF9CEA9799F1F7 /* Pods-AVFoundationProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AVFoundationProject.debug.xcconfig"; path = "Target Support Files/Pods-AVFoundationProject/Pods-AVFoundationProject.debug.xcconfig"; sourceTree = "<group>"; };
+		8C363B68287BF5B10019680E /* TTAVOpenCVSampleBasicTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTAVOpenCVSampleBasicTool.h; sourceTree = "<group>"; };
+		8C363B69287BF5B10019680E /* TTAVOpenCVSampleBasicTool.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = TTAVOpenCVSampleBasicTool.mm; sourceTree = "<group>"; };
+		8C363B6B287BF5E60019680E /* TTAVOpenCVSampleBasicViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTAVOpenCVSampleBasicViewController.h; sourceTree = "<group>"; };
+		8C363B6C287BF5E60019680E /* TTAVOpenCVSampleBasicViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTAVOpenCVSampleBasicViewController.m; sourceTree = "<group>"; };
+		8C363B76287C17E10019680E /* logo2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo2.png; sourceTree = "<group>"; };
 		8C3FAE75287298EA0080CA9F /* TTAVVTVideoEncodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTAVVTVideoEncodeViewController.m; sourceTree = "<group>"; };
 		8C3FAE76287298EA0080CA9F /* TTAVVTVideoEncodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTAVVTVideoEncodeViewController.h; sourceTree = "<group>"; };
 		8C3FAE7828729B690080CA9F /* TTAVCaptureSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTAVCaptureSession.h; sourceTree = "<group>"; };
@@ -131,6 +139,17 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		8C363B67287BF57C0019680E /* OpenCV */ = {
+			isa = PBXGroup;
+			children = (
+				8C363B68287BF5B10019680E /* TTAVOpenCVSampleBasicTool.h */,
+				8C363B69287BF5B10019680E /* TTAVOpenCVSampleBasicTool.mm */,
+				8C363B6B287BF5E60019680E /* TTAVOpenCVSampleBasicViewController.h */,
+				8C363B6C287BF5E60019680E /* TTAVOpenCVSampleBasicViewController.m */,
+			);
+			path = OpenCV;
+			sourceTree = "<group>";
+		};
 		8C3FAE74287298EA0080CA9F /* VideoToolbox */ = {
 			isa = PBXGroup;
 			children = (
@@ -188,6 +207,7 @@
 		8C97809D27F9914A00C9553F /* Items */ = {
 			isa = PBXGroup;
 			children = (
+				8C363B67287BF57C0019680E /* OpenCV */,
 				8CE5FAC827F9C1AF00F007FD /* AVFoundation */,
 			);
 			path = Items;
@@ -359,6 +379,7 @@
 				8C3FAE992872E2530080CA9F /* video.h264 */,
 				8CB839AF27D5CF4C000309A4 /* black.mp4 */,
 				8CEB340027DACC0D007E7564 /* gif.gif */,
+				8C363B76287C17E10019680E /* logo2.png */,
 				8CB839C027DA25C2000309A4 /* logo.png */,
 				8CF2170627D3450B00964C65 /* bgm.mp3 */,
 				8CF216DC27D0D17200964C65 /* hdr.MOV */,
@@ -443,6 +464,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8CB839B027D5CF4C000309A4 /* black.mp4 in Resources */,
+				8C363B77287C17E10019680E /* logo2.png in Resources */,
 				8CEB340127DACC0D007E7564 /* gif.gif in Resources */,
 				8CF216C327D0599200964C65 /* Main.storyboard in Resources */,
 				8CF216B927D058BE00964C65 /* LaunchScreen.storyboard in Resources */,
@@ -522,7 +544,9 @@
 				8C3FAE872872D31A0080CA9F /* TTAVVTVideoDecodeViewController.m in Sources */,
 				8CF2170227D31CD800964C65 /* TTAVVideoCompositionTool.m in Sources */,
 				8C3FAE902872E0A50080CA9F /* TTAVVideoFileReader.m in Sources */,
+				8C363B6D287BF5E60019680E /* TTAVOpenCVSampleBasicViewController.m in Sources */,
 				8CF216BC27D058BE00964C65 /* main.m in Sources */,
+				8C363B6A287BF5B10019680E /* TTAVOpenCVSampleBasicTool.mm in Sources */,
 				8CB839B327D5EC01000309A4 /* TTAVLivePhotoToVideoViewController.m in Sources */,
 				8CB8399027D4BCF9000309A4 /* TTAVImageToVideo1ViewController.m in Sources */,
 				8CF216AE27D058BD00964C65 /* SceneDelegate.m in Sources */,

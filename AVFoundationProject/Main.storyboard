@@ -743,16 +743,133 @@
             </objects>
             <point key="canvasLocation" x="793" y="1576"/>
         </scene>
+        <!--OpenCV Sample Basic View Controller-->
+        <scene sceneID="auM-1d-rBt">
+            <objects>
+                <viewController storyboardIdentifier="TTAVOpenCVSampleBasicViewController" id="9tO-FR-iH4" customClass="TTAVOpenCVSampleBasicViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="j21-U9-ayz"/>
+                        <viewControllerLayoutGuide type="bottom" id="k1g-m9-1W8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Uva-di-bVT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dpn-XH-Ex8">
+                                <rect key="frame" x="14" y="20" width="90" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="mbI-AO-Opv"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="灰度化"/>
+                                <connections>
+                                    <action selector="gray:" destination="9tO-FR-iH4" eventType="touchUpInside" id="3jp-hx-ehg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WdZ-Ze-QPx">
+                                <rect key="frame" x="124" y="20" width="90" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="eD2-r4-gkj"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="ROI"/>
+                                <connections>
+                                    <action selector="ROI:" destination="9tO-FR-iH4" eventType="touchUpInside" id="CMb-p3-dE1"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="x1k-jz-Xwo">
+                                <rect key="frame" x="10" y="197" width="355" height="450"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CEk-6w-5jJ">
+                                        <rect key="frame" x="0.0" y="0.0" width="355" height="223"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="E4W-hR-Pb3" appends="YES" id="hR8-sq-Dus"/>
+                                        </connections>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qZt-ed-yFM">
+                                        <rect key="frame" x="0.0" y="227" width="355" height="223"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="450" id="4IE-ae-X74"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Md3-E4-L2H">
+                                <rect key="frame" x="257" y="20" width="100" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="alO-kl-bC5"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="边缘处理"/>
+                                <connections>
+                                    <action selector="Canny:" destination="9tO-FR-iH4" eventType="touchUpInside" id="4xb-pO-RAt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="43o-Jf-rWo">
+                                <rect key="frame" x="14" y="59" width="90" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="Org-Ql-ZkG"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="阈值化"/>
+                                <connections>
+                                    <action selector="adaptiveThreshold:" destination="9tO-FR-iH4" eventType="touchUpInside" id="i3n-nD-6fX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uZ4-IR-Lbs">
+                                <rect key="frame" x="124" y="59" width="90" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="urT-b8-juN"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="马赛克"/>
+                                <connections>
+                                    <action selector="mosaics:" destination="9tO-FR-iH4" eventType="touchUpInside" id="PQV-4X-70q"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="k1g-m9-1W8" firstAttribute="top" secondItem="x1k-jz-Xwo" secondAttribute="bottom" constant="20" id="Acx-pj-1Yh"/>
+                            <constraint firstItem="uZ4-IR-Lbs" firstAttribute="leading" secondItem="43o-Jf-rWo" secondAttribute="trailing" constant="20" id="CuM-Wo-piM"/>
+                            <constraint firstItem="Dpn-XH-Ex8" firstAttribute="leading" secondItem="Uva-di-bVT" secondAttribute="leading" constant="14" id="Js3-l8-n7C"/>
+                            <constraint firstItem="uZ4-IR-Lbs" firstAttribute="top" secondItem="WdZ-Ze-QPx" secondAttribute="bottom" constant="8" symbolic="YES" id="MZV-pc-PUh"/>
+                            <constraint firstAttribute="trailing" secondItem="x1k-jz-Xwo" secondAttribute="trailing" constant="10" id="Onv-9x-m2g"/>
+                            <constraint firstItem="Md3-E4-L2H" firstAttribute="leading" secondItem="WdZ-Ze-QPx" secondAttribute="trailing" constant="43" id="PBa-sk-iCu"/>
+                            <constraint firstItem="x1k-jz-Xwo" firstAttribute="leading" secondItem="Uva-di-bVT" secondAttribute="leading" constant="10" id="hY1-oT-ncV"/>
+                            <constraint firstItem="43o-Jf-rWo" firstAttribute="leading" secondItem="Uva-di-bVT" secondAttribute="leading" constant="14" id="hfU-0P-fhu"/>
+                            <constraint firstItem="Dpn-XH-Ex8" firstAttribute="top" secondItem="j21-U9-ayz" secondAttribute="bottom" constant="20" id="hx5-MW-4nJ"/>
+                            <constraint firstItem="WdZ-Ze-QPx" firstAttribute="leading" secondItem="Dpn-XH-Ex8" secondAttribute="trailing" constant="20" id="k8M-XA-o3b"/>
+                            <constraint firstItem="WdZ-Ze-QPx" firstAttribute="top" secondItem="j21-U9-ayz" secondAttribute="bottom" constant="20" id="kPH-Ed-zfW"/>
+                            <constraint firstItem="43o-Jf-rWo" firstAttribute="top" secondItem="Dpn-XH-Ex8" secondAttribute="bottom" constant="8" symbolic="YES" id="sAD-4d-Egg"/>
+                            <constraint firstItem="Md3-E4-L2H" firstAttribute="top" secondItem="j21-U9-ayz" secondAttribute="bottom" constant="20" id="wVY-hD-awv"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageA" destination="CEk-6w-5jJ" id="UCz-lb-7XW"/>
+                        <outlet property="imageB" destination="qZt-ed-yFM" id="MnT-fx-fIQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aZw-L5-92n" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="E4W-hR-Pb3">
+                    <connections>
+                        <action selector="import:" destination="9tO-FR-iH4" id="qDd-Tc-bEK"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1620" y="1574.6626686656673"/>
+        </scene>
     </scenes>
     <resources>
-        <image name="airplayaudio.circle" catalog="system" width="32" height="32"/>
-        <image name="airplayaudio.circle.fill" catalog="system" width="32" height="32"/>
-        <image name="circle.grid.3x3.circle" catalog="system" width="32" height="32"/>
-        <image name="circle.grid.3x3.circle.fill" catalog="system" width="32" height="32"/>
-        <image name="photo.circle" catalog="system" width="32" height="32"/>
-        <image name="photo.circle.fill" catalog="system" width="32" height="32"/>
-        <image name="video.circle" catalog="system" width="32" height="32"/>
-        <image name="video.circle.fill" catalog="system" width="32" height="32"/>
+        <image name="airplayaudio.circle" catalog="system" width="128" height="121"/>
+        <image name="airplayaudio.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="circle.grid.3x3.circle" catalog="system" width="128" height="121"/>
+        <image name="circle.grid.3x3.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="photo.circle" catalog="system" width="128" height="121"/>
+        <image name="photo.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="video.circle" catalog="system" width="128" height="121"/>
+        <image name="video.circle.fill" catalog="system" width="128" height="121"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
@@ -763,7 +880,7 @@
             <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
-            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="tintColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
